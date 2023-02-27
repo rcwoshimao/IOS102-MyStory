@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DBt-BA-eBu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Profile View Controller" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="2V7-e6-w0E">
+                                <rect key="frame" x="60" y="111" width="273" height="590"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BbQ-IN-uqu">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="344"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rc_woshimao" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTP-8m-Ew2">
+                                                <rect key="frame" x="53" y="20" width="185" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <color key="textColor" red="0.13725490870000001" green="0.18039217590000001" blue="0.31372550129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconimage" translatesAutoresizingMaskIntoConstraints="NO" id="PN5-Xo-S74">
+                                                <rect key="frame" x="20" y="84" width="240" height="240"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES" selected="YES"/>
+                                        </accessibility>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OzK-R5-S0m">
+                                        <rect key="frame" x="20" y="366" width="233" height="224"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to my page!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-xf-kaD">
+                                                <rect key="frame" x="-24" y="0.0" width="281" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES" image="YES" selected="YES" staticText="YES" allowsDirectInteraction="YES"/>
+                                                </accessibility>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <color key="textColor" red="0.2891817119167191" green="0.30265408486645812" blue="0.80431498993636352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtX-Jo-H3O" userLabel="intro">
+                                                <rect key="frame" x="68" y="63" width="96" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Who I am"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="s4B-nN-Cmq" appends="YES" id="8Ua-Yv-iWO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7K-gZ-cau" userLabel="contact">
+                                                <rect key="frame" x="28" y="157" width="176" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Contact information"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="KY4-SH-5jD" appends="YES" id="gvJ-H8-Act"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGd-Id-0oY" userLabel="expertise">
+                                                <rect key="frame" x="39" y="114" width="154" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Area of expertise"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="qfx-0D-Yju" appends="YES" id="Tkz-9J-8RB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96841138601303101" green="0.89733871738727222" blue="0.60463261757096121" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Things about me!" id="OMR-NZ-dXz"/>
+                    <connections>
+                        <outlet property="stack" destination="2V7-e6-w0E" id="6xM-ub-C1N"/>
+                        <segue destination="rj5-bj-syT" kind="show" identifier="detailSegue" id="ACc-Op-SO1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="s4B-nN-Cmq">
+                    <connections>
+                        <action selector="didTapLink:" destination="BYZ-38-t0r" id="Kwp-uK-30Z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KY4-SH-5jD">
+                    <connections>
+                        <action selector="didTapLink:" destination="BYZ-38-t0r" id="DHN-bh-W3c"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qfx-0D-Yju">
+                    <connections>
+                        <action selector="didTapLink:" destination="BYZ-38-t0r" id="uGG-VI-iSi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="895.41984732824426" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Tny-5U-YVv">
+            <objects>
+                <viewController id="rj5-bj-syT" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAU-xv-h6f" customClass="DetailedViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-Gh-xM6" userLabel="detailImage">
+                                <rect key="frame" x="46" y="144" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-4x-kjE" userLabel="detailTextbox">
+                                <rect key="frame" x="58" y="500" width="288" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4xK-Ds-upn"/>
+                        <color key="backgroundColor" red="0.51161281120251789" green="0.82921816544099292" blue="0.76284996355309942" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IMM-Bn-ZuV"/>
+                    <connections>
+                        <outlet property="detailImage" destination="VnE-Gh-xM6" id="qjs-kL-6N9"/>
+                        <outlet property="detailTextbox" destination="SSP-4x-kjE" id="XWh-MM-duU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAt-A1-vty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780.916030534351" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kff-yR-Zyh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DBt-BA-eBu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SUI-ro-6A9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gdr-hc-TtU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVN-Xm-UBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.297709923664122" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconimage" width="1024" height="1024"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@
 		10311BC829A739420034E9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10311BC629A739420034E9C4 /* Main.storyboard */; };
 		10311BCA29A739430034E9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10311BC929A739430034E9C4 /* Assets.xcassets */; };
 		10311BCD29A739430034E9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10311BCB29A739430034E9C4 /* LaunchScreen.storyboard */; };
+		10311BD529A73D260034E9C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311BD429A73D260034E9C4 /* DetailViewController.swift */; };
+		10EC281329AC396500CEB58E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EC281229AC396500CEB58E /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		10311BC929A739430034E9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10311BCC29A739430034E9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10311BCE29A739430034E9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10311BD429A73D260034E9C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		10EC281229AC396500CEB58E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				10311BC029A739420034E9C4 /* AppDelegate.swift */,
 				10311BC229A739420034E9C4 /* SceneDelegate.swift */,
+				10EC281229AC396500CEB58E /* Page.swift */,
 				10311BC429A739420034E9C4 /* ViewController.swift */,
 				10311BC629A739420034E9C4 /* Main.storyboard */,
+				10311BD429A73D260034E9C4 /* DetailViewController.swift */,
 				10311BC929A739430034E9C4 /* Assets.xcassets */,
 				10311BCB29A739430034E9C4 /* LaunchScreen.storyboard */,
 				10311BCE29A739430034E9C4 /* Info.plist */,
@@ -140,7 +146,9 @@
 			files = (
 				10311BC529A739420034E9C4 /* ViewController.swift in Sources */,
 				10311BC129A739420034E9C4 /* AppDelegate.swift in Sources */,
+				10EC281329AC396500CEB58E /* Page.swift in Sources */,
 				10311BC329A739420034E9C4 /* SceneDelegate.swift in Sources */,
+				10311BD529A73D260034E9C4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
